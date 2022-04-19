@@ -8,6 +8,27 @@
 form {
     display: flex;
     margin: auto;
+    padding: 20px;
+    background: blue;
+}
+label {
+    align-self: center;
+    margin-right: 10px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+input {
+    line-height: 100%;
+}
+
+button {
+    background: white;
+    border: blue 2px solid;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 13px;
 }
 
 .error_message {

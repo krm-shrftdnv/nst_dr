@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    margin: auto;
+}
+
+.error_message {
+    color: darkred
+}

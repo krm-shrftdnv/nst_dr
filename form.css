@@ -10,6 +10,7 @@ form {
     margin: auto;
     padding: 20px;
     background: blue;
+    position: relative;
 }
 label {
     align-self: center;
@@ -32,5 +33,7 @@ button {
 }
 
 .error_message {
-    color: darkred
+    color: darkred;
+    position: absolute;
+    top: 80px;
 }

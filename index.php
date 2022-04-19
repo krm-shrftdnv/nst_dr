@@ -1,6 +1,6 @@
 <?php
 
-//putenv('PASSWORD=test');
+putenv('PASSWORD=test');
 define("CORRECT_PASSWORD", getenv('PASSWORD'));
 
 if (in_array($_SERVER['REQUEST_URI'], ['/', '/index.php'])) {
@@ -8,7 +8,7 @@ if (in_array($_SERVER['REQUEST_URI'], ['/', '/index.php'])) {
         if (isset($_POST['password']) && $_POST['password'] === CORRECT_PASSWORD) {
             echo file_get_contents('dr.html');
         } else {
-            echo file_get_contents('form_err.html');
+            include('form_err.php');
         }
         return;
     }

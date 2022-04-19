@@ -11,9 +11,9 @@
 <body>
 <div class="container">
     <form action="index.php" method="post">
-        <label for="password">Пароль:</label><input type="text" name="password" id="password"><br>
+        <label for="password">Пароль:</label><input type="text" name="password" id="password">
         <button type="submit">Подтвердить</button>
-        <p class="error_message">Неверно. Попробуйте ещё раз</p>
+        <p class="error_message">Ну ты чего? Какой <b><?php echo $_POST['password'];?></b>? Пробуй ещё раз!</p>
     </form>
 </div>
 </body>

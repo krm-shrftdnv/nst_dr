@@ -6,5 +6,7 @@
             "email": "shkar2001@mail.ru"
         }
     ],
-    "require": {}
+    "require": {
+        "ext-mbstring": "*"
+    }
 }

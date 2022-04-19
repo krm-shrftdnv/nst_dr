@@ -5,7 +5,7 @@ define("CORRECT_PASSWORD", getenv('PASSWORD'));
 
 if (in_array($_SERVER['REQUEST_URI'], ['/', '/index.php'])) {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (isset($_POST['password']) && strtolower($_POST['password']) === CORRECT_PASSWORD) {
+        if (isset($_POST['password']) && mb_strtolower($_POST['password']) === CORRECT_PASSWORD) {
             echo file_get_contents('dr.html');
         } else {
             include('form_err.php');

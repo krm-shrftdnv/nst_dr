@@ -1,6 +1,6 @@
 <?php
 
-putenv('PASSWORD=test');
+//putenv('PASSWORD=test');
 define("CORRECT_PASSWORD", getenv('PASSWORD'));
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

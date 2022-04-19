@@ -1,6 +1,6 @@
 <?php
 
-putenv('PASSWORD=test');
+//putenv('PASSWORD=test');
 define("CORRECT_PASSWORD", getenv('PASSWORD'));
 
 if (in_array($_SERVER['REQUEST_URI'], ['/', '/index.php'])) {
